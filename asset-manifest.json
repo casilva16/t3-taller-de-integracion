@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/t3-taller-de-integracion/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/t3-taller-de-integracion/static/js/main.157de4ba.chunk.js",
+    "main.js.map": "/t3-taller-de-integracion/static/js/main.157de4ba.chunk.js.map",
+    "runtime-main.js": "/t3-taller-de-integracion/static/js/runtime-main.4032cec9.js",
+    "runtime-main.js.map": "/t3-taller-de-integracion/static/js/runtime-main.4032cec9.js.map",
+    "static/js/2.a0568239.chunk.js": "/t3-taller-de-integracion/static/js/2.a0568239.chunk.js",
+    "static/js/2.a0568239.chunk.js.map": "/t3-taller-de-integracion/static/js/2.a0568239.chunk.js.map",
+    "static/js/3.09eb05c4.chunk.js": "/t3-taller-de-integracion/static/js/3.09eb05c4.chunk.js",
+    "static/js/3.09eb05c4.chunk.js.map": "/t3-taller-de-integracion/static/js/3.09eb05c4.chunk.js.map",
+    "index.html": "/t3-taller-de-integracion/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/t3-taller-de-integracion/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.a0568239.chunk.js.LICENSE.txt": "/t3-taller-de-integracion/static/js/2.a0568239.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/t3-taller-de-integracion/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4032cec9.js",
+    "static/js/2.a0568239.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.157de4ba.chunk.js"
+  ]
+}
