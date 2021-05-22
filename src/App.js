@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import TextField from '@material-ui/core/TextField';
+import './styles/App.css';
+import io from 'socket.io-client';
+import React, { useRef, useEffect, useState } from 'react';
+import Chat from './chat';
+
+// const socket = io.connect("wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl", { 
+//   path: '/flights'
+// });
 
 function App() {
+  //<Chat />
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Chat />
+  )
 }
 
 export default App;
