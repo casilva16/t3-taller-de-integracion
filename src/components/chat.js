@@ -1,5 +1,5 @@
 import TextField from '@material-ui/core/TextField';
-import './styles/App.css';
+import '../styles/App.css';
 import io from 'socket.io-client';
 import React, { useEffect, useState } from 'react';
 
@@ -59,7 +59,7 @@ function Chat(){
         <button>Send Message</button>
       </form>
       <div className="render-chat">
-        <h1>Chat Log</h1>
+        <h1>Centro de Control</h1>
         {renderChat()}
       </div>
     </div>
