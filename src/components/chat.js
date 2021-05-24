@@ -2,8 +2,9 @@ import TextField from '@material-ui/core/TextField';
 import '../styles/App.css';
 import io from 'socket.io-client';
 import React, { useEffect, useState } from 'react';
+import Moment from 'moment';
 
-
+// ACHICAR LA FECHA QUE SALE GIGANTE
 const socket = io.connect("wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl", { 
   path: '/flights'
 });
@@ -14,7 +15,8 @@ function Chat(){
 
   useEffect(() => {
     socket.on('CHAT', ({name, message }) => {
-      setChat([...chat, { name, message }])
+      const date = Moment().format('MMMM Do YYYY, h:mm:ss a');
+      setChat([...chat, { name, message, date }])
     })
   })
 
@@ -25,14 +27,16 @@ function Chat(){
   const onMessageSubmit = (e) => {
     e.preventDefault()
     const { name, message } = state
-    socket.emit("CHAT", { name, message })
+    const date = Moment().format('MMMM Do YYYY, h:mm:ss a')
+    socket.emit("CHAT", { name, message, date })
     setState({ message: "", name: ""})
   }
 
   const renderChat = () => {
-    return chat.map(({ name, message }, index) => (
+    return chat.map(({ name, message, date }, index) => (
       <div key={index}>
         <h3>
+          <p>{date}</p>
           {name}: <span>{message}</span>
         </h3>
       </div>
